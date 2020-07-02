@@ -10,17 +10,20 @@
 
 <br>
 
-# Pixart (Required)
+## Instructions
 
-For this assignment you'll be creating a Javascript painting app. When you're done, [it should display this functionality](http://ga-wdi-exercises.github.io/pixart_js/).
+1. Fork and clone this repository.
+2. Fullfill the listed requirements.
+3. Make a pull request to turn your work in.
+
+<br>
+
+## #1 - Pixart (Required)
+
+For this assignment you'll be creating a Javascript painting app. When you're done
 
 Use the starter code and commit each step of the exercise.
 
-## Instructions
-
-1. [Fork and clone this repository](https://git.generalassemb.ly/jdr-0622/js-pixart).
-1. Fullfill the listed requirements.
-1. Make a pull request to turn your work in.
 
 ### 1. Get color setting working
 
@@ -66,6 +69,8 @@ Use the starter code and commit each step of the exercise.
 
 :red_circle: **Commit.**
 
+<br>
+
 # Bonus (Pixart)
 
 ### 7. Enable lifting of "brush"/"pen".
@@ -76,22 +81,130 @@ Make it so that clicking the canvas "turns off" and "turns on" the paintbrush.  
 
 Add a color swatch. You should have 3 boxes with the most recent 3 colors used. When you click on each of those boxes, it should set the current brush color back to that color.
 
-# Gladiator (Require)
-The Emperor has commissioned you to build a Gladiator Arena. You will do so using your knowledge of object-oriented Javascript and ES6 classes.
+<br><br>
 
-Are you ready?
+## #2 - Gladiator (Required)
+The Emperor has commissioned you to build a Gladiator Arena. You will do so
+using your knowledge of object-oriented Javascript and ES6 classes.
 
-Fork and clone the repo bellow and work your way through the steps. When you are done create a pull request to turn your work in.
+All of your Javascript code will be written in `gladiator.js` and `arena.js`.
+You can test your code by opening `index.html` in the browser and interacting
+with the console.
 
-REPO >>> [Gladiator](https://git.generalassemb.ly/jdr-0622/js-gladiator/blob/master/readme.md)
+### Part 1: The Gladiator
 
-# Hungry for more???
+Create a `Gladiator` class that has the following properties...
+
+- a `name`
+- a `weapon` (one of Spear, Club, Trident)
+
+Once defined, you should be able to do the following...
+
+```js
+const max = new Gladiator("Maximus", "Trident");
+console.log(max.name); // "Maximus"
+console.log(max.weapon); // "Trident"
+```
+
+### Bonus
+
+Make it so that you cannot assign a Gladiator an invalid weapon (i.e., anything
+aside from Spear, Club or Trident. That means running code like
+`new Gladiator("Jesse", "Taco")` would throw an error
+
+**_Note:_** Complete Part 2 before starting the Bonus
+
+### Part 2: The Arena
+
+Create an `Arena` class that meets the following criteria...
+
+### An arena has a name
+
+```js
+const colosseum = new Arena("Colosseum");
+console.log(colosseum.name); // => Colosseum
+```
+
+### The name should be capitalized
+
+```js
+const megalopolis = new Arena("megalopolis");
+console.log(megalopolis.name); // => Megalopolis
+```
+
+### An arena can have gladiators
+
+```js
+const colosseum = new Arena("Colosseum");
+console.log(colosseum.gladiators); // => []
+```
+
+### You can add a gladiator to the arena
+
+```js
+const max = new Gladiator("Maximus", "Trident");
+const colosseum = new Arena("Colosseum");
+colosseum.addGladiator(max);
+console.log(colosseum.gladiators); // => [Gladiator]
+```
+
+### The arena should never have more than 2 gladiators in it at a time
+
+```js
+const max = new Gladiator("Maximus", "Trident");
+const titus = new Gladiator("Titus", "Sword");
+const andronicus = new Gladiator("Andronicus", "Sword");
+const colosseum = new Arena("Colosseum");
+colosseum.addGladiator(max);
+colosseum.addGladiator(titus);
+colosseum.addGladiator(andronicus);
+console.log(colosseum.gladiators.length); // => 2
+```
+
+### If there are two gladiators in the arena, you can call a `fight` method that results in the elimination of one of the gladiators from the arena.
+
+Winning conditions
+
+- Trident beats Spear
+- Spear beats Club
+- Club beats Trident
+- If the two gladiators have the same weapon, they are both eliminated.
+
+```js
+const max = new Gladiator("Maximus", "Trident");
+const titus = new Gladiator("Titus", "Spear");
+const colosseum = new Arena("Colosseum");
+colosseum.addGladiator(max);
+colosseum.addGladiator(titus);
+colosseum.fight();
+console.log(colosseum.gladiators); // => [max]
+```
+
+### Bonus
+
+- Add a method to remove gladiators from the arena by name
+- Update your winning conditions so that if the gladiator named "Maximus" is in
+  the fight, he wins.
+- Add a method to check to see if the crowd is entertained. The crowd is only
+  entertained if Maximus is in the arena.
+- Before a losing gladiator is eliminated, the user should be prompted to put
+  their thumbs up or down. If user votes down, the losing gladiator is removed.
+  If the user votes up, the gladiator stays in the arena and his opponent is
+  removed. (Life isn't fair). Hint: look up the prompt() method
+
+<br><br>
+
+## Hungry for more??? (Not Required)
 
 MDN Web Docs (previously known as MDN — the Mozilla Developer Network) is an evolving learning platform for Web technologies and the software that powers the Web.
 
 They have an amazing article on JavaScript that goes over the topics we cover in class. Go ahead and read it.
 
 [JS tutorial](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript).
+
+
+<br><br>
+
 
 ## Plagiarism
 
