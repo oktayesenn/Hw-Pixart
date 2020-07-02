@@ -71,7 +71,7 @@ Use the starter code and commit each step of the exercise.
 
 <br>
 
-# Bonus (Pixart)
+## Bonus (Pixart)
 
 ### 7. Enable lifting of "brush"/"pen".
 
