@@ -1,10 +1,6 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Pixart (Require)
 
-For this assignment you'll be creating a Javascript painting app. When you're done, [it should display this functionality](http://ga-wdi-exercises.github.io/pixart_js/).
-
-Use the starter code and commit each step of the exercise.
 
 ## Prerequisites
 
@@ -12,9 +8,17 @@ Use the starter code and commit each step of the exercise.
 * The DOM & DOM Selectors
 * Event Listeners & Event Handlers
 
+<br>
+
+# Pixart (Required)
+
+For this assignment you'll be creating a Javascript painting app. When you're done, [it should display this functionality](http://ga-wdi-exercises.github.io/pixart_js/).
+
+Use the starter code and commit each step of the exercise.
+
 ## Instructions
 
-1. Fork and clone this repository.
+1. [Fork and clone this repository](https://git.generalassemb.ly/jdr-0622/js-pixart).
 1. Fullfill the listed requirements.
 1. Make a pull request to turn your work in.
 
