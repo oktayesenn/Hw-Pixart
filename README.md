@@ -1,6 +1,6 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Pixart
+# Pixart (Require)
 
 For this assignment you'll be creating a Javascript painting app. When you're done, [it should display this functionality](http://ga-wdi-exercises.github.io/pixart_js/).
 
@@ -72,7 +72,7 @@ Make it so that clicking the canvas "turns off" and "turns on" the paintbrush.  
 
 Add a color swatch. You should have 3 boxes with the most recent 3 colors used. When you click on each of those boxes, it should set the current brush color back to that color.
 
-# Gladiator
+# Gladiator (Require)
 The Emperor has commissioned you to build a Gladiator Arena. You will do so using your knowledge of object-oriented Javascript and ES6 classes.
 
 Are you ready?
