@@ -15,10 +15,18 @@ inputColor.addEventListener('keypress', function(event){
     }
 })
 
-for(let i = 0; i < 20; i++) {
+for(let i = 0; i < 5000; i++) {
     let square = document.createElement('div');
     square.className = "square";
     square.id = i;
     document.body.appendChild(square);
 
+}
+
+let bodySquares = document.getElementsByClassName('square');
+
+for (let i = 0; i < bodySquares.length; i++) {
+    bodySquares[i].addEventListener('mouseover', function (){
+        document.getElementById(`${i}`).style.background = colorBox.style.background;
+    });
 }
