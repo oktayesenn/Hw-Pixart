@@ -14,3 +14,11 @@ inputColor.addEventListener('keypress', function(event){
     event.preventDefault();
     }
 })
+
+for(let i = 0; i < 20; i++) {
+    let square = document.createElement('div');
+    square.className = "square";
+    square.id = i;
+    document.body.appendChild(square);
+
+}
